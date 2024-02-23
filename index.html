@@ -1,216 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-adsense-account" content="ca-pub-2338796602512856">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - ZETA STUDIOS</title>
-    <link rel="stylesheet" href="Assets/Stylesheets/stylesHome.css">
-    <link rel="stylesheet" href="Assets/Stylesheets/stylesUI.css">
-    <link rel="icon" href="Assets/img-and-videos/Proyecto nuevo.png">
-    <script defer src="Assets/Javascripts/javascriptHome.js"></script>
+
+    <script src="https://kit.fontawesome.com/6989bef933.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <img src="img/logozeta.png" alt="Your Video Game Company Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#juegos">Games</a></li>
+                <li><a href="#nosotros">About Us</a></li>
+                <li><a href="#contacto">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="showSearchbar" onclick="showSearchbar()">
+            <i class="fa-solid fa-caret-down" id="showSearchbarIcon"></i>
+        </div>
+        <form action="#" id="searchBar" class="search-form" onsubmit="submitSearch(event)">
+            <!-- Agrega un identificador único al campo de entrada -->
+            <input type="text" id="search-input" placeholder="Search Game...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </header>
 
-    
-      
-        <header> 
-             
-           <div class="gradientcolor">
+    <section id="inicio">
+        <h2>Welcome to ZETA STUDIOS</h2>
+        <p>Where every click sparks a New adventure!</p>
+    </section>
 
-            <img class="logozetapc" src="Assets/img-and-videos/logozeta.png" alt="">
-
-            <img class="logozetamobile" src="Assets/img-and-videos/logozeta.png" alt="">
-
-            <nav class="headernav">
-                <ul>
-                    <li><a class="nav-link" href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="#news">News</a></li>
-                    <li><a class="nav-link" href="#games">Games</a></li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <nav class="mobileheadernav">
-                <ul>
-                    <li><a class="nav-linkmobile" href="index.html">Home</a></li>
-                    <li><a class="nav-linkmobile" href="#news">News</a></li>
-                    <li><a class="nav-linkmobile" href="#games">Games</a></li>
-                    <li><a class="nav-linkmobile" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-
-            <div class="buttondown"><a href="#news"><img src="Assets/ui-assets/arrow down-modified.png" alt="" ></a></div>
-            
-
-
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                    
-                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="parallax">
-                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(36, 36, 36,0.7)" />
-                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(36, 36, 36,0.5)" />
-                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(36, 36, 36,0.3)" />
-                  <use xlink:href="#gentle-wave" x="48" y="7" fill="#242424" />
-                  
-                </g>
-              </svg>
-
-            </div>
-        </header>
-
-        <main>
-            
-            <div class="morespace"></div>
-
-
-            
-            <div id="news"></div>
-            <section class="hidden News gradientnews">
-                <div class="containernews">
-                    <div class="latest-updates">
-                        <h3>News</h3>
-                        <h2 class="latesttitle">Latest Updates ╺╸ Bloodletting</h2>
-                        <p>- For mobiles coming soon.</p>
-                        <p>- A Boss at the 45s of levels for more intensity.</p>
-                        <p>- New AI for background colour changes, see the kicks in the music and changes the background colour.</p>
-                        <p>- New options menu.</p>
-                    </div>
-                    <div class="imagenews">
-                        <img src="Assets/img-and-videos/bloodletting background AI(1).jpeg">
-                    </div>
-                    
+    <section id="juegos">
+        <h2>Our Games</h2>
+        <div class="games-container">
+            <div class="game">
+                <h3>Bloodletting</h3>
+                <div class="image-container">
+                    <img src="img/Bloodletting.jpeg" alt="Game 1">
+                    <a href="game1.html" class="ver-juego">See Game</a>
                 </div>
-                <div class="containernewsmobile">
-                    <div class="latest-updates">
-                        <h3>News</h3>
-                        <h2 class="latesttitle">Latest Updates: BloodLetting</h2>
-                        <p>- For mobiles coming soon.</p>
-                        <p>- A Boss at the 45s of levels for more intensity.</p>
-                        <p>- New AI for background colour changes, see the kicks in the music and changes the background colour.</p>
-                        <p>- New options menu.</p>
-                    </div>
-                </div>
-            </section>
-
-            <div id="games" class="gamesdiv"></div>
-            <section class="games">
-                <h4 class="gamestittle hidden gradientgames">Games</h4>
-                <div class="backgames hidden gradientgames">
-                <div class="divgames">
-                    <div class="gameimg"><img src="Assets/img-and-videos/bloodletting background AI(1).jpeg" width="100%"><a class="viewButton" href="Games/BloodLetting/bloodletting.html">View Game</a><h2 class="gametitle" id="gametitle1">BloodLetting</h2></div>
-                    <div class="gameimg"><img src="Assets/img-and-videos/game2.jpg" width="100%"><a class="viewButton" href="">View Game</a><h2 class="gametitle" id="gametitle2">60 Seconds</h2></div>
-                    <div class="gameimg"><img src="Assets/img-and-videos/lemon tree(1).jpeg" width="100%"><a class="viewButton" href="">View Game</a><h2 class="gametitle" id="gametitle3">None</h2></div>
-                </div>
-                <div class="divgamesmobile">
-                    <div class="gameimg"><a href="Games/BloodLetting/bloodletting.html"><img src="Assets/img-and-videos/bloodletting background AI(1).jpeg" width="80%"></a></div>
-                    <div class="gameimg"><a href=""><img src="Assets/img-and-videos/game2.jpg" width="80%"></a></div>
-                    <div class="gameimg"><a href=""><img src="Assets/img-and-videos/lemon tree(1).jpeg" width="80%"></a></div>
-                </div> 
-                </div>
-            </section>
-
-            <section class="hidden contactsectionmobile">
-
-                <div class="aboutMeDivM">
-                    <h5>About Me 👤</h5>
-                    <p>
-                        Hi, I'm Zeta, the 18-year-old creator behind <b>ZETA STUDIOS</b>, 
-                        where we bring games to life. From HTML and CSS to JavaScript, 
-                        C++, and C#, I craft immersive experiences that redefine gaming. 
-                        Join us in the world of <b>ZETA STUDIOS</b>, where every click sparks a <b>New adventure!</b> 🎮✨
-                    </p>
-                </div>
-
-                <div class="divformmobile">
-                        <form action="https://formsubmit.co/support@zetastudios.net" method="POST">
-                            <input type="hidden" name="_template" value="box">   
-                            <input type="hidden" name="_next" value="https://zetastudios.net/formcompleted.html">
-                            <input type="hidden" name="_autoresponse" value="Hello dear, we have received your email, in a few moments we will contact you.">
-                            <input type="hidden" name="_replyto">
-
-
-                            <h5 class="contacttittlem">Contact</h5>
-                            <h7>Your Name:</h7>
-                            <input type="name" name="name" id="mailinput" required placeholder="Enter your name...">  
-                            <h7>Your mail:</h7>
-                            <input type="mail" name="email" id="mailinput" required placeholder="Enter your email...">  
-                            <h7>Your message:</h7>
-                            <textarea name="message" id="" cols="30" rows="10" required placeholder="Enter your message..."></textarea>
-                            <button class="sumbit" type="submit" value="sumbit">Send</button>
-                                     
-                        </form>
-                </div>
-            </section>
-
-
-            <div id="contact"></div>
-            <section class="hidden contactsection">
-                <div class="aboutMeDiv">
-                    <h5>About Me 👤</h5>
-                    <p>
-                        Hi, I'm Zeta, the 18-year-old creator behind <b>ZETA STUDIOS</b>, 
-                        where we bring games to life. From HTML and CSS to JavaScript, 
-                        C++, and C#, I craft immersive experiences that redefine gaming. 
-                        Join us in the world of <b>ZETA STUDIOS</b>, where every click sparks a <b>New adventure!</b> 🎮✨
-                    </p>
-                </div>
-
-                <div class="divform">
-                        <form action="https://formsubmit.co/support@zetastudios.net" method="POST">
-                            <input type="hidden" name="_template" value="box">   
-                            <input type="hidden" name="_next" value="https://zetastudios.net/formcompleted.html">
-                            <input type="hidden" name="_autoresponse" value="Hello dear, we have received your email, in a few moments we will contact you.">
-                            <input type="hidden" name="_replyto">
-
-
-                            <h5 class="contacttittle">Contact</h5>
-                            <h7>Your Name:</h7>
-                            <input type="name" name="name" id="mailinput" required placeholder="Enter your name...">  
-                            <h7>Your mail:</h7>
-                            <input type="mail" name="email" id="mailinput" required placeholder="Enter your email...">  
-                            <h7>Your message:</h7>
-                            <textarea name="message" id="" cols="30" rows="10" required placeholder="Enter your message..."></textarea>
-                            <button class="sumbit" type="submit" value="sumbit">Send</button>
-                                     
-                        </form>
-                </div>
-
                 
-               
-            </section>
-        </main>
-        
-        <footer>
-            <div class="footer">
-                <div class="socialmediadiv">
-                    <div class="socialmedialinks">
-                        <p>Follow us on</p>
-                            <div class="linksfooter socialmediapc">
-                                <a href="https://www.instagram.com/zeta.studios.dev/" target="_blank"><img src="Assets/ui-assets/instagram.svg" width="2%" alt=""></a>
-                                <a href="https://www.youtube.com/@zetastudiosdev" target="_blank"><img src="Assets/ui-assets/youtube.svg" width="2%" alt=""></a>
-                                <a href="https://twitter.com/zetastudios_dev" target="_blank"><img src="Assets/ui-assets/5340249_bird_media_social_trending_twitter_icon.svg" width="2%" alt=""></a>
-                                <a href="https://www.facebook.com/profile.php?id=61553870055654" target="_blank"><img src="Assets/ui-assets/3463465_facebook_media_network_social_icon.svg" width="2%" alt=""></a>
-                                <a href="https://www.tiktok.com/@zeta.studios.dev" target="_blank"><img src="Assets/ui-assets/tiktokicon.png" width="2%" alt=""></a>
-                                <a href="discord" target="_blank"><img src="Assets/ui-assets/discord.svg" width="2%" alt=""></a>
-                            </div>
-                            <div class="linksfooter socialmediamobile">
-                                <a href="https://www.instagram.com/zeta.studios.dev/" target="_blank"><img src="Assets/ui-assets/instagram.svg" width="6%" alt=""></a>
-                                <a href="https://www.youtube.com/@zetastudiosdev" target="_blank"><img src="Assets/ui-assets/youtube.svg" width="6%" alt=""></a>
-                                <a href="https://twitter.com/zetastudios_dev" target="_blank"><img src="Assets/ui-assets/5340249_bird_media_social_trending_twitter_icon.svg" width="6%" alt=""></a>
-                                <a href="https://www.facebook.com/profile.php?id=61553870055654" target="_blank"><img src="Assets/ui-assets/3463465_facebook_media_network_social_icon.svg" width="6%" alt=""></a>
-                                <a href="https://www.tiktok.com/@zeta.studios.dev" target="_blank"><img src="Assets/ui-assets/tiktokicon.png" width="6%" alt=""></a>
-                                <a href="discord" target="_blank"><img src="Assets/ui-assets/discord.svg" width="6%" alt=""></a>
-                            </div>
-                    </div>
-                    <div class="policiesDiv">
-                        <a href="/Privacy-Policy/privacy-policy.html">Privacy and Policy</a>
-                    </div>
-                    
             </div>
-            <p class="copyright">&copy; 2023 - 2024 ZETA STUDIOS</p>
+            <div class="game">
+                <h3>60 Seconds</h3>
+                <div class="image-container">
+                    <img src="img/60Seconds.jpg" alt="Game 2">
+                    <a href="game2.html" class="ver-juego">See Game</a>
+                </div>
+                
             </div>
-        </footer>
+            <div class="game">
+                <h3>Voxeland</h3>
+                <div class="image-container">
+                    <img src="img/Bloodletting.jpeg" alt="Game 3">
+                    <a href="game3.html" class="ver-juego">See Game</a>
+                </div>
+                
+            </div>
+            <!-- Add more games as needed -->
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2>About Us</h2>
+        <p>Hi, I'm Zeta, the 18-year-old creator behind ZETA STUDIOS, where we bring games to life. I craft immersive experiences that redefine gaming. 
+            Join us in the world of ZETA STUDIOS, where every click sparks a New adventure.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contact</h2>
+        <p>Contact information.</p>
+    </section>
+
+    <footer>
+        <p>&copy;2024 ZETA STUDIOS. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
