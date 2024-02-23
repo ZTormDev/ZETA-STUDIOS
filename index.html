@@ -49,7 +49,7 @@
                 <a href="patchdetails.html">View more</a>
             </div>
             <div class="patchImg">
-                <img src="img/Bloodletting.jpeg" alt="">
+                <img src="img/voxeland.png" alt="">
             </div>
         </div>
     </section>
@@ -60,7 +60,7 @@
             <div class="game">
                 <h3>Bloodletting</h3>
                 <div class="image-container">
-                    <img src="img/Bloodletting.jpeg" alt="Game 1">
+                    <img src="img/BloodlettingNoReleased.png" alt="Game 1">
                     <a href="game1.html" class="ver-juego">See Game</a>
                 </div>
                 
@@ -68,7 +68,7 @@
             <div class="game">
                 <h3>60 Seconds</h3>
                 <div class="image-container">
-                    <img src="img/60Seconds.jpg" alt="Game 2">
+                    <img src="img/60SecondsNoReleased.png" alt="Game 2">
                     <a href="game2.html" class="ver-juego">See Game</a>
                 </div>
                 
@@ -76,7 +76,7 @@
             <div class="game">
                 <h3>Voxeland</h3>
                 <div class="image-container">
-                    <img src="img/voxeland.png" alt="Game 3">
+                    <img src="img/VoxelandInDev.png" alt="Game 3">
                     <a href="game3.html" class="ver-juego">See Game</a>
                 </div>
                 
@@ -85,9 +85,25 @@
         </div>
     </section>
 
-    <section id="contacto">
-        <h2>Contact</h2>
-        <p>Contact information.</p>
+    <section id="contact-signup" class="section">
+        <div class="container">
+            <div class="icon-text">
+                <i class="fas fa-phone-alt fa-5x"></i>
+                <h2>Contact Me</h2>
+                <form id="formSolicitud" action="https://formspree.io/f/xwkgbpbk" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="Email" required>
+
+                    <label for="textarea">Your Message:</label>
+                    <textarea name="Message" id="textarea" cols="40" rows="8" placeholder="Write your message..." maxlength="550"  ></textarea>
+
+                    <input type="submit" value="Enviar solicitud">
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer>

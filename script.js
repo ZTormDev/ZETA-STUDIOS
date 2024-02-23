@@ -1,7 +1,7 @@
 var juegosDisponibles = [
-    { nombre: "Bloodletting", imagen: "img/Bloodletting.jpeg", enlace: "game1.html" },
-    { nombre: "60 Seconds", imagen: "img/60Seconds.jpg", enlace: "game2.html" },
-    { nombre: "Voxeland", imagen: "img/voxeland.png", enlace: "game3.html" }
+    { nombre: "Bloodletting", imagen: "img/BloodlettingNoReleased.png", enlace: "game1.html" },
+    { nombre: "60 Seconds", imagen: "img/60SecondsNoReleased.png", enlace: "game2.html" },
+    { nombre: "Voxeland", imagen: "img/VoxelandInDev.png", enlace: "game3.html" }
     // Puedes agregar más juegos aquí si es necesario
 ];
 
