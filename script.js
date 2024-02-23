@@ -1,10 +1,13 @@
-// Define un array con los juegos disponibles
 var juegosDisponibles = [
     { nombre: "Bloodletting", imagen: "img/Bloodletting.jpeg", enlace: "game1.html" },
     { nombre: "60 Seconds", imagen: "img/60Seconds.jpg", enlace: "game2.html" },
-    { nombre: "Voxeland", imagen: "img/Bloodletting.jpeg", enlace: "game3.html" }
+    { nombre: "Voxeland", imagen: "img/voxeland.png", enlace: "game3.html" }
     // Puedes agregar más juegos aquí si es necesario
 ];
+
+
+
+
 
 function submitSearch(event) {
     event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario

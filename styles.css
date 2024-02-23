@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    background-color: #ffffff;
+    background-color: #f0f0f0;
     color: black;
 }
 
@@ -16,6 +16,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    margin-bottom: 3em;
 }
 
 .logo {
@@ -26,6 +28,7 @@ header {
 
 nav {
     margin-top: 10px; /* Ajustar el espaciado superior */
+    position: relative;
 }
 
 nav ul {
@@ -33,18 +36,20 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex; /* Mostrar los elementos de navegación en línea */
-    justify-content: center; /* Centrar los elementos de navegación horizontalmente */
+    justify-content: end; /* Centrar los elementos de navegación horizontalmente */
+    align-items: end;
+    position: relative;
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-inline: 10px;
 }
 
 nav ul li a {
     color: #cfcfcf;
     font-weight: 400;
     text-decoration: none;
-    padding: 10px 15px; /* Ajustar el espaciado del enlace */
+    padding: 8px 15px; /* Ajustar el espaciado del enlace */
     border-radius: 5px; /* Agregar bordes redondeados */
     transition: background-color 0.3s; /* Agregar transición al pasar el cursor */
 }
@@ -72,10 +77,40 @@ section {
     max-width: 300px;
     text-align: center;
     position: relative;
-    background-color: #00000000 ;
+    background-color: #ffffff ;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     color: black;
+}
+
+.gameSearch {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    max-width: none;
+    padding: 40px;
+}
+
+.tituloJuegoSearch {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+#searchResultsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    width: fit-content;
+}
+
+#juegos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .game:hover {
@@ -107,13 +142,19 @@ section {
 .image-container {
     position: relative;
     overflow: hidden;
+    height: fit-content;
     border-radius: 8px;
+}
+
+.image-containerSearch {
+    height: fit-content;
 }
 
 .image-container img {
     transition: transform 0.3s;
     max-width: 100%;
 }
+
 
 .image-container:hover img {
     transform: scale(1.15);
@@ -150,10 +191,11 @@ footer {
     background-color: #6a5acd;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     position: relative;
     bottom: 0;
     left: 0;
+    font-size: .8em;
 }
 
 
@@ -171,6 +213,14 @@ footer {
     margin-top: 2em;
 }
 
+.showSearchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
 .showSearchbar i {
     color: #ffffffb8;
     display: flex;
@@ -179,15 +229,20 @@ footer {
     margin-top: .5em;
     font-size: 2em;
     position: relative;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
-.showSearchbar i:hover {
+.showSearchbar:hover i {
     color: white;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
+
+#searchIcon {
+    font-size: 1em;
+    margin-left: .5em;
+}
 
 .search-form input[type="text"]::placeholder , .search-form2 input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.245);
@@ -246,6 +301,104 @@ footer {
     transition: all 0.3s ease;
 }
 
+.patchImg {
+    width: 35em;
+    background-color: #fff;
+    padding: 3em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.patchImg img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.patch-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.patch-container:hover .patch-notes {
+    box-shadow: 0 8px 16px rgba(51, 0, 255, 0.2);
+    transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+    transition: all 0.3s ease;
+}
+
+.patch-container:hover .patchImg {
+    box-shadow: 0 8px 16px rgba(51, 0, 255, 0.2);
+    transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+    transition: all 0.3s ease;
+}
+
+
+#noticias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 5%;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.patch-notes {
+    margin-left: 5em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    padding: 3em;
+    border-radius: 10px 0 0px 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.patch-notes a{
+    background-color: #6a5acd;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.patch-notes a:hover {
+    background-color: #826fff;
+    transition: all 0.3s ease;
+}
+
+.patch-notes ul li {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.patch-notes ul , .patch-notes h2{
+    padding: 0;
+    margin: 0;
+}
+
+.patch-notes ul {
+    padding-left: 1em;
+    margin-bottom: 2em;
+}
+
+.title-news , .p-news{
+    margin: 0%;
+}
+
+.p-news {
+    margin-bottom: 3em;
+}
+
+
+
+
+
+
+
 
 /* Estilos para dispositivos con pantalla más pequeña, como tabletas y teléfonos */
 @media screen and (max-width: 768px) {
@@ -272,5 +425,27 @@ footer {
 
     .game {
         margin-inline: 1em;
+    }
+    .patch-container {
+        flex-direction: column-reverse;
+    }
+    .patch-notes {
+        margin-left: 0;
+        border-radius: 10px;
+        background-color: #00000000;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    #noticias {
+        padding: 1em;
+        background-color: white;
+    }
+
+    .patchImg {
+        padding: 0;
+        width: 80%;
+        height: 100%;
+        background-color: #00000000;
+        box-shadow: 0px 0px 0px 0px;
     }
 }

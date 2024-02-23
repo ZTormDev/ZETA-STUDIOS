@@ -19,13 +19,13 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="#noticias">News</a></li>
                 <li><a href="#juegos">Games</a></li>
-                <li><a href="#nosotros">About Us</a></li>
                 <li><a href="#contacto">Contact</a></li>
             </ul>
         </nav>
         <div class="showSearchbar" onclick="showSearchbar()">
-            <i class="fa-solid fa-caret-down" id="showSearchbarIcon"></i>
+            <i class="fa-solid fa-caret-down" id="showSearchbarIcon"></i><i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
         </div>
         <form action="#" id="searchBar" class="search-form" onsubmit="submitSearch(event)">
             <!-- Agrega un identificador único al campo de entrada -->
@@ -34,9 +34,24 @@
         </form>
     </header>
 
-    <section id="inicio">
-        <h2>Welcome to ZETA STUDIOS</h2>
-        <p>Where every click sparks a New adventure!</p>
+    <section id="noticias">
+        <h2 class="title-news">News</h2>
+        <p class="p-news">The lastest patch notes from our games</p>
+        <div class="patch-container">
+            <div class="patch-notes">
+                <h2>Voxeland | Alpha v0.0.2</h2>
+                <h3></h3>
+                <ul>
+                    <li>Performance fixes</li>
+                    <li>Bugs fixes</li>
+                    <li>New character creation mode</li>
+                </ul>
+                <a href="patchdetails.html">View more</a>
+            </div>
+            <div class="patchImg">
+                <img src="img/Bloodletting.jpeg" alt="">
+            </div>
+        </div>
     </section>
 
     <section id="juegos">
@@ -61,19 +76,13 @@
             <div class="game">
                 <h3>Voxeland</h3>
                 <div class="image-container">
-                    <img src="img/Bloodletting.jpeg" alt="Game 3">
+                    <img src="img/voxeland.png" alt="Game 3">
                     <a href="game3.html" class="ver-juego">See Game</a>
                 </div>
                 
             </div>
             <!-- Add more games as needed -->
         </div>
-    </section>
-
-    <section id="nosotros">
-        <h2>About Us</h2>
-        <p>Hi, I'm Zeta, the 18-year-old creator behind ZETA STUDIOS, where we bring games to life. I craft immersive experiences that redefine gaming. 
-            Join us in the world of ZETA STUDIOS, where every click sparks a New adventure.</p>
     </section>
 
     <section id="contacto">
