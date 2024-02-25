@@ -19,9 +19,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#noticias">News</a></li>
-                <li><a href="#juegos">Games</a></li>
-                <li><a href="#contacto">Contact</a></li>
+                <li><a href="index.html#news">News</a></li>
+                <li><a href="index.html#games">Games</a></li>
+                <li><a href="index.html#contact-signup">Contact</a></li>
             </ul>
         </nav>
         <div class="showSearchbar" onclick="showSearchbar()">
@@ -34,7 +34,7 @@
         </form>
     </header>
 
-    <section id="noticias">
+    <section id="news">
         <h2 class="title-news">News</h2>
         <p class="p-news">The lastest patch notes from our games</p>
         <div class="patch-container">
@@ -46,7 +46,7 @@
                     <li>Bugs fixes</li>
                     <li>New character creation mode</li>
                 </ul>
-                <a href="patchdetails.html">View more</a>
+                <a href="voxeland-patch-notes.html">View more</a>
             </div>
             <div class="patchImg">
                 <img src="img/voxeland.png" alt="">
@@ -54,7 +54,7 @@
         </div>
     </section>
 
-    <section id="juegos">
+    <section id="games">
         <h2>Our Games</h2>
         <div class="games-container">
             <div class="game">
@@ -88,16 +88,16 @@
     <section id="contact-signup" class="section">
         <div class="container">
             <div class="icon-text">
-                <i class="fas fa-phone-alt fa-5x"></i>
+                <i class="fas fa-phone-alt fa-5x phoneicon"></i>
                 <h2>Contact Me</h2>
                 <form id="formSolicitud" action="https://formspree.io/f/xwkgbpbk" method="post">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="Name" required>
+                    <input type="text" id="name" name="Name" placeholder="Your name..." required>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="Email" required>
+                    <input type="email" id="email" name="Email" placeholder="Your email..." required>
 
-                    <label for="textarea">Your Message:</label>
+                    <label for="textarea">Message:</label>
                     <textarea name="Message" id="textarea" cols="40" rows="8" placeholder="Write your message..." maxlength="550"  ></textarea>
 
                     <input type="submit" value="Enviar solicitud">

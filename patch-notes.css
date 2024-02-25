@@ -1,0 +1,110 @@
+#patch-notes-section {
+    background-color: white;
+    margin-inline: 10em;
+    border-radius: 10px;
+    padding: 3em;
+    margin-bottom: 3em;
+}
+
+.title {
+    margin: 0;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: rgb(35, 35, 35);
+}
+
+.date {
+    margin: 0;
+    font-weight: 500;
+    text-align: left;
+    font-size: 1em;
+}
+
+.content-container {
+    text-align: left;
+    margin-inline: 4em;
+    margin-top: 4em;
+    border-left: solid rgb(75, 75, 75) 1px;
+    border-right: solid rgb(75, 75, 75) 1px;
+    padding-inline: 4rem;
+}
+
+.category {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: -2rem;
+    margin-bottom: 2rem;
+}
+
+.subcategory {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(35, 35, 35);
+    margin: 0;
+}
+
+.details {
+    color: rgb(65, 65, 65);
+    margin: 0;
+    margin-block: .5rem;
+    margin-bottom: 2rem;
+}
+
+.gameimg {
+    background-image: url(img/voxeland.png);
+    background-size: cover;
+    background-position-y: 70%;
+    padding: 5vw;
+    margin-inline: 4rem;
+    margin-top: 2rem;
+    border-radius: .5vw;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) { 
+    #patch-notes-section {
+        margin: 8vw;
+    }
+
+    .gameimg {
+        margin-inline: 0rem;
+        padding: 6vh;
+    }
+
+    .title {
+        font-size: 8vw;
+    }
+    .subtitle {
+        font-size: 6vw;
+    }
+    .content-container {
+        margin: 0;
+        padding-inline: 8vw;
+    }
+
+    .category {
+        font-size: 5vw;
+        margin-left: -4vw;
+    }
+    .subcategory {
+        font-size: 4vw;
+    }
+    .details {
+        font-size: 4vw;
+    }
+}

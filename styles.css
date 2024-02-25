@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
@@ -107,7 +112,7 @@ section {
     width: fit-content;
 }
 
-#juegos {
+#games {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -335,7 +340,7 @@ footer {
 }
 
 
-#noticias {
+#news {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -501,6 +506,19 @@ textarea {
 
 
 
+.phoneicon {
+    font-size: 4em;
+}
+
+
+
+
+
+
+
+
+
+
 /* Estilos para dispositivos con pantalla más pequeña, como tabletas y teléfonos */
 @media screen and (max-width: 768px) {
 
@@ -520,7 +538,7 @@ textarea {
         font-size: 60%;
     }
 
-    #juegos {
+    #games {
         padding-inline: 0;
     }
 
@@ -537,10 +555,12 @@ textarea {
         box-shadow: 0px 0px 0px 0px;
     }
 
-    #noticias {
+    #news {
         padding: 1em;
         background-color: white;
     }
+    
+
 
     .patchImg {
         padding: 0;
@@ -552,6 +572,7 @@ textarea {
 
     #contact-signup {
         padding: 0;
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -573,11 +594,16 @@ textarea {
         align-items: center;
     }
 
+
     #formSolicitud {
         margin: 0;
     }
 
     textarea {
         width: 100%;
+
+    }
+    .textarea::placeholder {
+        font-family: "Inter";
     }
 }
