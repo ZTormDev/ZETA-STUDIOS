@@ -29,6 +29,7 @@ header {
     width: 70%;
     max-width: 500px;
     min-width: 150px;
+    image-rendering: optimizeSpeed;
 }
 
 nav {
@@ -136,6 +137,7 @@ section {
 .game img {
     border-radius: 8px;
     transition: transform 0.3s, border-radius 0.3s; /* Ajuste de la transición */
+    image-rendering: optimizeSpeed;
 }
 
 .game a {
@@ -158,6 +160,7 @@ section {
 .image-container img {
     transition: transform 0.3s;
     max-width: 100%;
+    image-rendering: optimizeSpeed;
 }
 
 
@@ -318,6 +321,7 @@ footer {
 .patchImg img {
     width: 100%;
     border-radius: 10px;
+    image-rendering: optimizeSpeed;
 }
 
 .patch-container {
@@ -361,7 +365,7 @@ footer {
 }
 
 .patch-notes a{
-    background-color: #6a5acd;
+    background-color: #6e4ce0cb;
     color: white;
     text-decoration: none;
     padding: .5em;
@@ -370,7 +374,8 @@ footer {
 }
 
 .patch-notes a:hover {
-    background-color: #826fff;
+    font-size: 1.05rem;
+    background-color: #6e4ce0;
     transition: all 0.3s ease;
 }
 
@@ -531,11 +536,11 @@ textarea {
     nav ul li {
         margin-right: 0; /* Eliminar el margen derecho */
         margin-block: 10px; /* Agregar un espacio entre los elementos de navegación */
-        font-size: 100%;
+        font-size: 4vw;
     }
 
     footer {
-        font-size: 60%;
+        font-size: 100%;
     }
 
     #games {

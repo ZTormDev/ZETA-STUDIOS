@@ -24,17 +24,18 @@
 
 .date {
     margin: 0;
-    font-weight: 500;
-    text-align: left;
-    font-size: 1em;
+    font-weight: 400;
+    text-align: right;
+    font-size: 1.2em;
+    color: rgb(78, 78, 78);
 }
 
 .content-container {
     text-align: left;
     margin-inline: 4em;
     margin-top: 4em;
-    border-left: solid rgb(75, 75, 75) 1px;
-    border-right: solid rgb(75, 75, 75) 1px;
+    border-left: solid #6e4ce0 1px;
+    border-right: solid #6e4ce0 1px;
     padding-inline: 4rem;
 }
 
@@ -61,8 +62,30 @@
     margin-bottom: 2rem;
 }
 
-.gameimg {
-    background-image: url(img/voxeland.png);
+
+.backIcon {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #6e4ce0cc;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.backIcon:hover {
+    transform: scale(1.05);
+    color: #6e4ce0;
+    transition: all 0.3s ease;
+}
+
+.head-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.gameimg-0-voxeland , .gameimg-1-voxeland , .gameimg-2-voxeland {
     background-size: cover;
     background-position-y: 70%;
     padding: 5vw;
@@ -70,6 +93,19 @@
     margin-top: 2rem;
     border-radius: .5vw;
     background-repeat: no-repeat;
+    image-rendering: optimizeSpeed;
+}
+
+.gameimg-0-voxeland {
+    background-image: url(../../img/voxeland.png);
+}
+
+.gameimg-1-voxeland {
+    background-image: url(../../img/voxeland.png);
+}
+
+.gameimg-2-voxeland {
+    background-image: url(../../img/voxeland.png);
 }
 
 
@@ -81,7 +117,7 @@
         margin: 8vw;
     }
 
-    .gameimg {
+    .gameimg-0-voxeland , .gameimg-1-voxeland , .gameimg-2-voxeland{
         margin-inline: 0rem;
         padding: 6vh;
     }
@@ -106,5 +142,10 @@
     }
     .details {
         font-size: 4vw;
+    }
+
+    #patch-notes-section {
+        margin: 3vw;
+        padding: 5vw;
     }
 }
