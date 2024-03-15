@@ -307,3 +307,4 @@ function quitTrailer()
     videoTrailer.src = "https://www.youtube.com/embed/xXyBVbryR9M?autoplay=0";
 
 }
+
