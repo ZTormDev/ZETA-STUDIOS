@@ -47,6 +47,12 @@ function showSearchbar() {
 
     isMoved = !isMoved; // Invertimos el estado para el próximo clic
 }
+const logo = document.querySelector(".logo");
+
+logo.addEventListener("click", function()
+{
+    window.location.href = "/index.html";
+})
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -281,3 +287,23 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+function viewTrailer()
+{
+    const trailer = document.querySelector('.youtube-trailer');
+    const videoTrailer = document.querySelector('.video-trailer');
+
+    trailer.style.display = "flex";
+    videoTrailer.src = "https://www.youtube.com/embed/xXyBVbryR9M?autoplay=1";
+
+}
+
+function quitTrailer()
+{
+    const trailer = document.querySelector('.youtube-trailer');
+    const videoTrailer = document.querySelector('.video-trailer');
+
+    trailer.style.display = "none";
+    videoTrailer.src = "https://www.youtube.com/embed/xXyBVbryR9M?autoplay=0";
+
+}
