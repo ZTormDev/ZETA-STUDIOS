@@ -54,6 +54,13 @@ logo.addEventListener("click", function()
     window.location.href = "/index.html";
 })
 
+const voxelandlogo = document.querySelector(".voxeland-logo");
+
+voxelandlogo.addEventListener("click", function()
+{
+    window.location.href = "/games/Voxeland/voxeland.html";
+})
+
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -308,3 +315,78 @@ function quitTrailer()
 
 }
 
+
+const gameinfoTab = document.querySelector(".gameinfo-tab");
+const supportTab = document.querySelector(".support-tab");
+const socialmediaTab = document.querySelector(".socialmedia-tab");
+
+const gameinfoDropdown = document.querySelector(".gameinfo-dropdown");
+const supportDropdown = document.querySelector(".support-dropdown");
+const socialmediaDropdown = document.querySelector(".socialmedia-dropdown");
+
+isActiveInfo = false;
+isActiveSupport = false;
+isActiveSocial = false;
+
+gameinfoTab.addEventListener('click', function () {
+    
+
+    if (isActiveInfo == false)
+    {
+        gameinfoDropdown.style.display = "flex";
+        supportDropdown.style.display = "none";
+        socialmediaDropdown.style.display = "none";
+        isActiveSocial = false
+        isActiveSupport = false
+    }
+    if (isActiveInfo == true)
+    {
+        gameinfoDropdown.style.display = "none";
+        
+    }
+
+    isActiveInfo = !isActiveInfo
+
+});
+
+supportTab.addEventListener('click', function () {
+    
+
+    if (isActiveSupport == false)
+    {
+        supportDropdown.style.display = "flex";
+        gameinfoDropdown.style.display = "none";
+        socialmediaDropdown.style.display = "none";
+        isActiveInfo = false
+        isActiveSocial = false
+    }
+    if (isActiveSupport == true)
+    {
+        supportDropdown.style.display = "none";
+        
+    }
+
+    isActiveSupport = !isActiveSupport
+
+});
+
+socialmediaTab.addEventListener('click', function () {
+    
+
+    if (isActiveSocial == false)
+    {
+        socialmediaDropdown.style.display = "flex";
+        gameinfoDropdown.style.display = "none";
+        supportDropdown.style.display = "none";
+        isActiveSupport = false
+        isActiveInfo = false
+    }
+    if (isActiveSocial == true)
+    {
+        socialmediaDropdown.style.display = "none";
+        
+    }
+
+    isActiveSocial = !isActiveSocial
+
+});
