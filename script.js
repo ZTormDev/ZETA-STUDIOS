@@ -390,3 +390,76 @@ socialmediaTab.addEventListener('click', function () {
     isActiveSocial = !isActiveSocial
 
 });
+
+const closeTab = document.querySelector(".close-tab-mobile");
+const mobileTab = document.querySelector(".tab-mobile");
+const openTab = document.querySelector(".open-tab-mobile");
+
+const openGameInfo = document.querySelector(".li-expand-gameInfo");
+const openSupport = document.querySelector(".li-expand-support");
+const openSocialMedia = document.querySelector(".li-expand-socialMedia");
+
+const gameInfoExpand = document.querySelector(".gameInfo-expand");
+const supportExpand = document.querySelector(".support-expand");
+const socialMediaExpand = document.querySelector(".socialMedia-expand");
+
+infoExpandBool = false
+supportExpandBool = false
+socialMediaExpandBool = false
+
+closeTab.addEventListener("click", function() {
+
+    mobileTab.style.transform = "translateX(100%)";
+
+});
+
+openTab.addEventListener("click", function() {
+
+    mobileTab.style.transform = "translateX(0)";
+
+});
+
+
+
+
+openGameInfo.addEventListener("click", function() {
+
+    if(infoExpandBool == true)
+    {
+        gameInfoExpand.style.display = "none"
+    }
+    if(infoExpandBool == false)
+    {
+        gameInfoExpand.style.display = "flex";
+    }
+
+    infoExpandBool = !infoExpandBool;
+});
+
+openSupport.addEventListener("click", function() {
+
+    if(supportExpandBool == true)
+    {
+        supportExpand.style.display = "none"
+    }
+    if(supportExpandBool == false)
+    {
+        supportExpand.style.display = "flex";
+    }
+
+    supportExpandBool = !supportExpandBool;
+});
+
+openSocialMedia.addEventListener("click", function() {
+
+    if(socialMediaExpandBool == true)
+    {
+        socialMediaExpand.style.display = "none"
+    }
+    if(socialMediaExpandBool == false)
+    {
+        socialMediaExpand.style.display = "flex";
+    }
+
+    socialMediaExpandBool = !socialMediaExpandBool;
+});
