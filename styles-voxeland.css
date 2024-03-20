@@ -11,6 +11,9 @@ body {
     padding: 0;
     position: relative;
     background-color: #f0f0f0;
+    background-image: url(/img/backgroundpattern.png);
+    background-repeat: repeat;
+    background-size: auto;
     color: black;
 }
 
@@ -46,6 +49,8 @@ header {
 .left-nav {
     display: flex;
     flex-direction: row;
+    justify-content: start;
+    align-items: center;
 }
 
 .right-nav {
@@ -136,6 +141,7 @@ header {
 
 .logo {
     width: 8%;
+    height: fit-content;
     image-rendering: optimizeSpeed;
     margin: 0rem 1.5rem;
 }
@@ -202,6 +208,7 @@ nav ul li a:hover i {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    z-index: 6;
 }
 
 .dropdown li a {
@@ -211,6 +218,7 @@ nav ul li a:hover i {
     color: rgb(185, 185, 185);
     font-weight: 500;
     text-transform: capitalize;
+    z-index: 6;
 }
 
 .dropdown li a i  {
@@ -242,6 +250,7 @@ nav ul li a:hover i {
     margin: .2rem 0;
     display: flex;
     justify-content: start;
+    z-index: 6;
 }
 
 .dropdown li:hover {
@@ -279,15 +288,16 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 35%;
+    height: 42.5rem;
     z-index: -1;
     top: 5rem;
-
+    box-shadow: 0 0 300px #f0f0f0;
 }
 
 .video-container video {
     width: 100%;
     position: absolute;
+
 }
 
 .title-container {
@@ -331,7 +341,6 @@ footer {
 }
 
 .recent-news {
-    background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
 }
@@ -830,7 +839,7 @@ footer {
     }
 
     .video-container {
-        height: 32rem;
+        height: 31rem;
     }
 
     .title-container {
@@ -877,6 +886,7 @@ footer {
     }
 
     .video-container {
+        height: 29rem;
     }
 
     .about-title h2 {
@@ -917,7 +927,7 @@ footer {
     }
 
     .video-container {
-        height: 27rem;
+        height: 31rem;
     }
 
     .title-container {
@@ -968,6 +978,17 @@ footer {
 
 
 @media screen and (max-width: 750px) {
+
+    
+
+    .headerPC {
+        display: none;
+    }
+
+    .headerMobile {
+        display: flex;
+    }
+
 
     .title-container h1 {
         font-size: 5rem;
@@ -1126,14 +1147,14 @@ footer {
     }
 
     .video-container video {
-        width: 39rem;
+        width: 50rem;
         margin-top: -5rem;
         position: relative;
     }
 
     .video-container {
         top: 5.5rem;
-        height: fit-content;
+        height: 11%;
     }
 
     .title-container {
@@ -1159,15 +1180,6 @@ footer {
         font-size: 10vw;
     }
 
-
-
-    .headerPC {
-        display: none;
-    }
-
-    .headerMobile {
-        display: flex;
-    }
 
 
 
