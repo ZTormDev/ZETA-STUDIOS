@@ -1,7 +1,7 @@
 var juegosDisponibles = [
     { nombre: "Bloodletting", imagen: "/img/BloodlettingNoReleased.png", enlace: "/game1" },
     { nombre: "60 Seconds", imagen: "/img/60SecondsNoReleased.png", enlace: "/game2" },
-    { nombre: "Voxeland", imagen: "/img/VoxelandInDev.png", enlace: "/games/Voxeland/voxeland" }
+    { nombre: "Voxeland", imagen: "/img/VoxelandInDev.png", enlace: "/en/games/voxeland" }
     // Puedes agregar más juegos aquí si es necesario
 ];
 
@@ -51,14 +51,14 @@ const logo = document.querySelector(".logo");
 
 logo.addEventListener("click", function()
 {
-    window.location.href = "/index";
+    window.location.href = "/";
 })
 
 const voxelandlogo = document.querySelector(".voxeland-logo");
 
 voxelandlogo.addEventListener("click", function()
 {
-    window.location.href = "/games/Voxeland/voxeland";
+    window.location.href = "/en/games/voxeland";
 })
 
 
