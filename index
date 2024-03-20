@@ -21,9 +21,9 @@
         <img src="img/logozeta.png" alt="Your Video Game Company Logo" class="logo">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#games">Games</a></li>
-                <li><a href="index.html#contact-signup">Contact</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="index#games">Games</a></li>
+                <li><a href="index#contact-signup">Contact</a></li>
             </ul>
         </nav>
         <div class="showSearchbar" onclick="showSearchbar()">
@@ -43,7 +43,7 @@
                 <h3>Bloodletting</h3>
                 <div class="image-container">
                     <img src="img/BloodlettingNoReleased.png" alt="Game 1">
-                    <a href="games/bloodletting.html" class="ver-juego">See Game</a>
+                    <a href="games/bloodletting" class="ver-juego">See Game</a>
                 </div>
                 
             </div>
@@ -51,7 +51,7 @@
                 <h3>60 Seconds</h3>
                 <div class="image-container">
                     <img src="img/60SecondsNoReleased.png" alt="Game 2">
-                    <a href="game2.html" class="ver-juego">See Game</a>
+                    <a href="game2" class="ver-juego">See Game</a>
                 </div>
                 
             </div>
@@ -59,7 +59,7 @@
                 <h3>Voxeland</h3>
                 <div class="image-container">
                     <img src="img/VoxelandInDev.png" alt="Game 3">
-                    <a href="/games/Voxeland/voxeland.html" class="ver-juego">See Game</a>
+                    <a href="/games/Voxeland/voxeland" class="ver-juego">See Game</a>
                 </div>
                 
             </div>

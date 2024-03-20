@@ -1,7 +1,7 @@
 var juegosDisponibles = [
-    { nombre: "Bloodletting", imagen: "/img/BloodlettingNoReleased.png", enlace: "/game1.html" },
-    { nombre: "60 Seconds", imagen: "/img/60SecondsNoReleased.png", enlace: "/game2.html" },
-    { nombre: "Voxeland", imagen: "/img/VoxelandInDev.png", enlace: "/game3.html" }
+    { nombre: "Bloodletting", imagen: "/img/BloodlettingNoReleased.png", enlace: "/game1" },
+    { nombre: "60 Seconds", imagen: "/img/60SecondsNoReleased.png", enlace: "/game2" },
+    { nombre: "Voxeland", imagen: "/img/VoxelandInDev.png", enlace: "/games/Voxeland/voxeland" }
     // Puedes agregar más juegos aquí si es necesario
 ];
 
@@ -27,7 +27,7 @@ function submitSearch(event) {
     localStorage.setItem("searchResults", JSON.stringify(juegosFiltrados));
 
     // Redirigir a la página de búsqueda
-    window.location.href = "/search.html";
+    window.location.href = "/search";
 }
 
 var isMoved = true;
@@ -51,14 +51,14 @@ const logo = document.querySelector(".logo");
 
 logo.addEventListener("click", function()
 {
-    window.location.href = "/index.html";
+    window.location.href = "/index";
 })
 
 const voxelandlogo = document.querySelector(".voxeland-logo");
 
 voxelandlogo.addEventListener("click", function()
 {
-    window.location.href = "/games/Voxeland/voxeland.html";
+    window.location.href = "/games/Voxeland/voxeland";
 })
 
 
@@ -124,15 +124,11 @@ document.addEventListener('DOMContentLoaded', function () {
     fullscreenButton.addEventListener('click', function(){
 
         mainImageContainer.style.display = 'flex';
-        console.log("entrando en fs");
-
     })
 
     fullscreenButtonFS.addEventListener('click', function(){
 
         mainImageContainer.style.display = 'none';
-        console.log("saliendo de fs");
-        
     })
 
     nextButton.addEventListener('click', function() {
