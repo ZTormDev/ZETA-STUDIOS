@@ -459,3 +459,15 @@ openSocialMedia.addEventListener("click", function() {
 
     socialMediaExpandBool = !socialMediaExpandBool;
 });
+
+function visitVoxeland() {
+    window.location.href = "/en/games/voxeland";
+}
+
+function visitBloodletting() {
+    window.location.href = "/en/games/bloodletting";
+}
+
+function visitSixtyseconds() {
+    window.location.href = "/en/games/60-seconds";
+}
