@@ -1,0 +1,280 @@
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0913;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 7vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+    text-shadow: 0 0 8rem #8876ff, 0 0rem 1rem #afa3ff;
+}
+h2 {
+    font-size: 3vw;
+    font-weight: 100;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 8rem #8876ff, 0 0rem 1rem #afa3ff;
+}
+h3 {
+    font-size: 1.2vw;
+    font-weight: 300;
+    margin: 0;
+    border-bottom: solid .1rem #8876ff;
+    padding: .4rem 0;
+    text-shadow: 0 0 8rem #8876ff, 0 0rem 1rem #afa3ff;
+}
+
+img {
+    width: 25%;
+    height: fit-content;
+    margin: 4rem;
+    filter: brightness(1000%) saturate(1000%);
+    opacity: 1000%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-magnifying-glass {
+    font-size: 2.5vw;
+    margin: 1rem;
+    text-shadow: 0 0 8rem #8876ff, 0 0rem 1rem #afa3ff;
+    animation: searchingAnimation infinite 3s ease;
+    left: 56%;
+    top: 4%;
+    position: absolute;
+}
+
+.goback a {
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #b3a7ff;
+    margin: .1rem;
+    text-shadow: 0 0 8rem #8876ff42, 0 0rem 1rergba(175, 163, 255, 0.308)ff;
+    transition: all ease 0.5s;
+}
+
+.goback a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8rem #8876ff, 0 0rem 1rem #afa3ff;
+    transition: all ease 0.5s;
+}
+
+.goback a:hover ~ .anim-border {
+    width: 100%;
+    transition: all ease 0.5s;
+}
+
+.goback p {
+    font-size: 1vw;
+    margin: 0;
+}
+
+.goback {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.anim-border {
+    border-top: solid .15rem #afa3ff;
+    width: 0%;
+    transition: all ease 0.5s;
+}
+
+@keyframes searchingAnimation {
+    0% {
+        left: 56%;
+        top: 5%;
+    }
+    25% {
+        top: 1%;
+        left: 56%;
+    }
+    50% {
+        left: 57%;
+        top: 1%;
+    }
+    75% {
+        top: 5%;
+        left: 57%;
+    }
+    100% {
+        left: 56%;
+        top: 5%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    img {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 12vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 5vw;
+        margin-left: 4rem;
+    }
+    
+    .goback a {
+        font-size: 3vw;
+    }
+
+    .goback p {
+        font-size: 2vw;
+
+    }
+
+    @keyframes searchingAnimation {
+        0% {
+            left: 56%;
+            top: 5%;
+        }
+        25% {
+            top: 1%;
+            left: 56%;
+        }
+        50% {
+            left: 58%;
+            top: 1%;
+        }
+        75% {
+            top: 5%;
+            left: 58%;
+        }
+        100% {
+            left: 56%;
+            top: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 756px) {
+
+    img {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 18vw;
+    }
+    h2 {
+        font-size: 8vw;
+    }
+    h3 {
+        font-size: 3.5vw;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 7vw;
+        margin-left: 5rem;
+    }
+    
+    .goback a {
+        font-size: 5vw;
+    }
+
+    .goback p {
+        font-size: 3vw;
+
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+
+    img {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 20vw;
+    }
+    h2 {
+        font-size: 8vw;
+    }
+    h3 {
+        font-size: 3.5vw;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 8vw;
+        margin-left: 3.2rem;
+    }
+    
+    .goback a {
+        font-size: 5vw;
+    }
+
+    .goback p {
+        font-size: 3vw;
+
+    }
+
+    @keyframes searchingAnimation {
+        0% {
+            left: 56%;
+            top: 5%;
+        }
+        25% {
+            top: 1%;
+            left: 56%;
+        }
+        50% {
+            left: 59%;
+            top: 1%;
+        }
+        75% {
+            top: 5%;
+            left: 59%;
+        }
+        100% {
+            left: 56%;
+            top: 5%;
+        }
+    }
+}
