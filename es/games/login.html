@@ -11,19 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/styles-login.css">
+    <link rel="stylesheet" href="/es/styles/styles-login.css">
 </head>
 <body>
     <header>
         <img class="logo" src="/img/logozeta.png" alt="">
     </header>
 
-    <video preload="true" autoplay muted loop src="/video/loginbackground.mp4"></video>
+    <video preload="true" autoplay muted loop src="/video/voxeland/loginbackground.mp4"></video>
     <div class="vignette"></div>
 
     <section>
         <div class="game-image">
-            <img class="game-logo" src="/img/cube-world-logo.png" alt="">
+            <img class="game-logo" src="/img/voxeland/cube-world-logo.png" alt="">
         </div> 
         <div class="container" id="container">
             <div class="form-container sign-up-container">
@@ -72,7 +72,21 @@
             </div>
         </div>
     </section>
-    <script src="/script-login.js"></script>
-    <script src="/script.js"></script>
+    <script src="/es/scripts/script-login.js"></script>
+    <script src="/es/scripts/script.js"></script>
+
+    <script>
+        var userLang = navigator.language || navigator.userLanguage;
+
+        if (userLang.includes("es")) {
+        }
+        else if (userLang.includes("en")) {
+            window.location.href = '/en/games/login';
+        }
+        else {
+            window.location.href = '/en/games/login';
+        }
+
+    </script>
 </body>
 </html>
