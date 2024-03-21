@@ -1,3 +1,19 @@
+const logo = document.querySelector(".logo");
+
+logo.addEventListener("click", function()
+{
+    window.location.href = "/es/";
+})
+
+const voxelandlogo = document.querySelector(".voxeland-logo");
+
+voxelandlogo.addEventListener("click", function()
+{
+    window.location.href = "/es/games/voxeland";
+})
+
+
+
 function viewTrailer()
 {
     const trailer = document.querySelector('.youtube-trailer');

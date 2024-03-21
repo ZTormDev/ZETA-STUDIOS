@@ -1,119 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+    var userLang = navigator.language || navigator.userLanguage;
 
-    <link rel="icon" href="img/logozeta.png" type="image/x-icon"/>
-
-    <title>Home - ZETA STUDIOS</title>
-
-    <script src="https://kit.fontawesome.com/6989bef933.js" crossorigin="anonymous"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <img src="img/logozeta.png" alt="Your Video Game Company Logo" class="logo">
-        <p class="slogan">We make games We want to play</p>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="index#games">Games</a></li>
-                <li><a href="index#contact-signup">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="games">
-        <div class="games-container">
-            <div class="game bloodletting">
-                <div class="hover-desc">
-                    <h2>Bloodletting</h2>
-                    <p>A physical horror game</p>
-                    <div class="view-button" onclick="visitBloodletting()">
-                        <p>Webpage <i class="fa-solid fa-up-right-from-square"></i></p>
-                    </div>
-                </div>
-            </div>
-            <div class="game sixtyseconds">
-                <div class="hover-desc">
-                    <h2>60 Seconds</h2>
-                    <p>Survive 60 Seconds an a intense dubstep levels</p>
-                    <div class="view-button" onclick="visitSixtyseconds()">
-                        <p>Webpage <i class="fa-solid fa-up-right-from-square"></i></p>
-                    </div>
-                </div>
-            </div>
-            <div class="game voxeland">
-                <div class="hover-desc">
-                    <h2>Voxeland</h2>
-                    <p>A Open World Voxel Survival RPG Game</p>
-                    <div class="view-button" onclick="visitVoxeland()">
-                        <p>Webpage <i class="fa-solid fa-up-right-from-square"></i></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-us">
-        <div class="about-title">
-            <img src="img/logozeta.svg" alt="">
-        </div>
-        <div class="about-content">
-            <p><b>ZETA STUDIOS</b> is an indie game studio originally founded by <b>ZTorm</b> from Chile.</p>
-            <p>Our current members are:</p>
-            <ul>
-                <li>
-                    <p>
-                        <b>ZTorm</b> is the foundator of the studio. 
-                        He handles game desing, art, writing, coding and takes care of the website
-                    </p>
-                </li>
-            </ul>
-            <p>
-                You can contact us via email at <a href="">zetastudiosgames@gmail.com</a> or through Twitter at <a href="">@zetastudios</a>. 
-                We also have a <a href="">Youtube channel</a>.
-            </p>
-        </div>
-        <div class="copyright-content">
-            <p><b>OUR STANCE ON COPYRIGHT AND FAN WORKS</b></p>
-            <p>We cherish fan expression and participation so, as a general rule, we won't take action to protect our copyright unless we really feel the need to do so.</p>
-            <p>That means you are free to do the following:</p>
-            <ul>
-                <li>
-                    <p>Make and monetize gameplay videos.</p>
-                </li>
-                <li>
-                    <p>Make and sell fanart.</p>
-                </li>
-                <li>
-                    <p>Make and sell covers of our game's songs.</p>
-                </li>
-                <li>
-                    <p>Showcase our games at public events.</p>
-                </li>
-                <li>
-                    <p>Add a cameo appearance of any of our game's characters inside your game (we encourage cameos of Lariat the Witch!)</p>
-                </li>
-                <li>
-                    <p>Probably any transformative work you do for free.</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy;2024 ZETA STUDIOS. All rights reserved.</p>
-    </footer>
-
-
-    <script src="script.js"></script>
-
-</body>
-</html>
+    if (userLang.includes("es")) {
+        window.location.href = '/es/';
+    }
+    else if (userLang.includes("en")) {
+        window.location.href = '/en/';
+    }
+    else {
+        window.location.href = '/en/';
+    }
+</script>

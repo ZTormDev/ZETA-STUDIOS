@@ -243,27 +243,17 @@
     <script src="/es/script.js"></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function(){
+        var userLang = navigator.language || navigator.userLanguage;
 
-            var userLang = navigator.language || navigator.userLanguage;
+        if (userLang.includes("es")) {
+        }
+        else if (userLang.includes("en")) {
+            window.location.href = '/en/games/voxeland';
+        }
+        else {
+            window.location.href = '/en/games/voxeland';
+        }
 
-            if (window.location.href == '/es/games/voxeland.html')
-            {
-                alert("estas en español");
-            }
-            else
-            {
-                if (userLang.includes("en")) {
-                    window.location.href = '/en/games/voxeland';
-                }
-                else if (userLang.includes("es")) {
-                    window.location.href = '/es/games/voxeland';
-                }
-                else {
-                    window.location.href = '/en/games/voxeland';
-                }
-            }      
-        });
     </script>
 </body>
 </html>
