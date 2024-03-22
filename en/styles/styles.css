@@ -10,12 +10,16 @@ body {
     position: relative;
     background-color: #0d0913;
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
     background-color: #6a5acd;
     color: #fff;
-    padding: 20px;
+    padding: 0 0 1.2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -23,6 +27,8 @@ header {
     align-items: center;
     position: relative;
     box-shadow: 0 0 100px #695acd75;
+    width: 100%;
+    margin: 0;
 }
 .slogan {
     text-transform: uppercase;
@@ -88,172 +94,13 @@ section {
 }
 
 
-.gameSearch {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: auto;
-    max-width: none;
-    padding: 40px;
-}
-
-.tituloJuegoSearch {
-    font-size: 2em;
-    margin-top: 0;
-}
-
-#searchResultsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    position: relative;
-    width: fit-content;
-}
-
-.image-container {
-    position: relative;
-    overflow: hidden;
-    height: fit-content;
-    border-radius: 8px;
-}
-
-.image-containerSearch {
-    height: fit-content;
-}
-
-.image-container img {
-    transition: transform 0.3s;
-    max-width: 100%;
-    image-rendering: optimizeSpeed;
-}
-
-
-.image-container:hover img {
-    transform: scale(1.15);
-    filter: brightness(70%);
-    border-radius: 8px; /* Ajuste del borde redondeado al hacer zoom */
-    transition: all 0.3s ease;
-}
-
-
-.ver-juego {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #6a5acd;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.image-container:hover .ver-juego {
-    opacity: 1;
-}
-
-.ver-juego:focus {
-    outline: none;
-}
-
-
-.search-form , .search-form2{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    margin-top: .5em;
-    display: none;
-    
-}
-
-.search-form2 {
-    display: flex;
-    margin-top: 2em;
-}
-
-.showSearchbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-
-
-.showSearchbar i {
-    color: #ffffffb8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: .5em;
-    font-size: 2em;
-    position: relative;
-    transition: all 0.2s ease;
-}
-
-.showSearchbar:hover i {
-    color: white;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-
-#searchIcon {
-    font-size: 1em;
-    margin-left: .5em;
-}
-
-.search-form input[type="text"]::placeholder , .search-form2 input[type="text"]::placeholder {
-    color: rgba(255, 255, 255, 0.245);
-}
-
-.search-form input[type="text"] , .search-form2 input[type="text"]{
-    font-family: "Inter", sans-serif;
-    padding: 8px;
-    padding-left: 15px;
-    width: 100%;
-    max-width: 450px;
-    border-radius: 5px 0 0 5px;
-    background-color: #0000002c;
-    color: white;
-    border: none; /* Eliminar el borde derecho */
-  
-}
-.search-form input[type="text"]:focus , .search-form2 input[type="text"]:focus{
-    outline: solid 2px rgba(0, 0, 0, 0.200);
-    outline-offset: -2px;
-}
-
-.search-form button , .search-form2 button {
-    padding: 8px 15px;
-    background-color: #00000059;
-    color: #fff;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-}
-
-.search-form button:hover , .search-form2 button:hover{
-    background-color: #ffffff78;
-    color: rgba(0, 0, 0, 0.781);
-    font-weight: 500;
-}
-
-
-
-
 #games {
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .games-container {
@@ -373,10 +220,12 @@ section {
     align-items: center;
     color: white;
     text-align: left;
-    margin: 4rem 40rem 1rem;
+    margin: 4rem 0 1rem;
     background-color: #00000000;
     box-shadow: 0px 0px 200px -100px #695acd7c;
     border-radius: 1rem;
+    padding: 2rem 2rem 1rem;
+    width: 35rem;
     transition: all ease .5s;
 }
 
@@ -425,17 +274,21 @@ section {
 
 /* Estilos para dispositivos con pantalla más pequeña, como tabletas y teléfonos */
 @media screen and (max-width: 768px) {
-
-    nav ul {
-        flex-direction: column; /* Cambiar la dirección de los elementos a columna */
-        align-items: center; /* Centrar los elementos horizontalmente */
-
+    nav ul li a{
+        font-size: 3.5vw;
+        padding: .5rem 1rem;
+    }
+    nav ul li a:hover{
+        font-size: 3.5vw;
+        padding: .5rem 2rem;
     }
 
-    nav ul li {
-        margin-right: 0; /* Eliminar el margen derecho */
-        margin-block: 10px; /* Agregar un espacio entre los elementos de navegación */
-        font-size: 4vw;
+    .hover-desc h2{
+        font-size: 10vw;
+    }
+
+    .hover-desc p{
+        font-size: 3.5vw;
     }
 
     footer {
@@ -446,68 +299,18 @@ section {
         padding-inline: 0;
     }
 
+    .about-us {
+        width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 1170px) { 
+    .games-container {
+        flex-direction: column;
+        height: fit-content;
+    }
     .game {
-        margin-inline: 1em;
-    }
-    .patch-container {
-        flex-direction: column-reverse;
-    }
-    .patch-notes {
-        margin-left: 0;
-        border-radius: 10px;
-        background-color: #00000000;
-        box-shadow: 0px 0px 0px 0px;
-    }
-
-    #news {
-        padding: 1em;
-        background-color: white;
-    }
-    
-
-
-    .patchImg {
-        padding: 0;
-        width: 80%;
-        height: 100%;
-        background-color: #00000000;
-        box-shadow: 0px 0px 0px 0px;
-    }
-
-    #contact-signup {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .icon-text {
-        padding: 2em;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    #formSolicitud {
-        margin: 0;
-    }
-
-    textarea {
-        width: 100%;
-
-    }
-    .textarea::placeholder {
-        font-family: "Inter";
+        height: 20rem;
     }
 }
