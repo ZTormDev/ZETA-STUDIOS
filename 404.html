@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <link rel="icon" href="/img/logozeta.png" type="image/x-icon"/>
+        <link rel="icon" href="/sources/img/logoSmallZETASTUDIOS.svg" type="image/x-icon"/>
     
-        <title>Home - ZETA STUDIOS</title>
+        <title>ERROR 404 - ZETA STUDIOS</title>
     
         <script src="https://kit.fontawesome.com/6989bef933.js" crossorigin="anonymous"></script>
     
@@ -14,10 +14,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
         
-        <link rel="stylesheet" href="/styles404.css">
+        <link rel="stylesheet" href="sources/styles/styles404.css">
     </head>
 <body>
-    <section class="error-sect">
+    <section class="error-sect en">
         <div class="icons">
             <h1>404</h1>
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -31,5 +31,39 @@
             <div class="anim-border"></div>
         </div>
     </section>
+
+    <section class="error-sect es">
+        <div class="icons">
+            <h1>404</h1>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <h2>Pagina no encontrada</h2>
+        <h3>Lo siento por eso.</h3>
+
+        <div class="goback">
+            <p>Volver a:</p>
+            <a href="/">zetastudios.net</a>
+            <div class="anim-border"></div>
+        </div>
+    </section>
+
+    <script>
+        const sectionEN = document.querySelector(".en");
+        const sectionES = document.querySelector(".es");
+        var userLang = navigator.language || navigator.userLanguage;
+
+        if (userLang.includes("es")) {
+            sectionEN.style.display = 'none';
+            sectionES.style.display = 'flex';
+        }
+        else if (userLang.includes("en")) {
+            sectionES.style.display = 'none';
+            sectionEN.style.display = 'flex';
+        }
+        else {
+            sectionES.style.display = 'none';
+            sectionEN.style.display = 'flex';
+        }
+    </script>
 </body>
 </html>

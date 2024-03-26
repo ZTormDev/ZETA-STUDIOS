@@ -2,14 +2,24 @@ const logo = document.querySelector(".logo");
 
 logo.addEventListener("click", function()
 {
-    window.location.href = "/en/";
+    window.location.href = "/";
 })
 
 const voxelandlogo = document.querySelector(".voxeland-logo");
 
 voxelandlogo.addEventListener("click", function()
 {
-    window.location.href = "/en/games/voxeland";
+    var userLang = navigator.language || navigator.userLanguage;
+
+    if (userLang.includes("es")) {
+        window.location.href = '/es/games/voxeland';
+    }
+    else if (userLang.includes("en")) {
+        window.location.href = '/en/games/voxeland';
+    }
+    else {
+        window.location.href = '/en/games/voxeland';
+    }
 })
 
 
